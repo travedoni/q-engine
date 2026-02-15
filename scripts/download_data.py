@@ -41,8 +41,8 @@ def main():
     # Load companies metadata
     loader.load_securities(companies)
 
-    # Download price data -- for now 10 stocks
-    tickers = [c['ticker'] for c in companies][:10]
+    # Download price data -- for now 100 stocks
+    tickers = [c['ticker'] for c in companies][:100]
     print(f"Fetched {len(tickers)} tickers: {', '.join(tickers)}")
 
     all_price_data = []
